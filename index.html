@@ -37,11 +37,15 @@
         </nav>
         <!-- Masthead-->
         <header class="masthead bg-primary text-white text-center">
+          <div class="divider-custom divider-light">
+              <div class="divider-custom-line"></div>
+              <div class="divider-custom-icon"><i class="fas fa-dove"></i></div>
+              <div class="divider-custom-line"></div>
+          </div>
             <div class="container d-flex align-items-center flex-column">
+                <img src="LittleBirdToysLogo(1).png" id="MainLogo">
                 <!-- Masthead Avatar Image-->
-                <img class="LittleBirdToysLogo(1).png">
                 <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Little Bird Toys</h1>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -49,74 +53,56 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Handmade Toys</p>
             </div>
         </header>
         <!-- Portfolio Section-->
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Products</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Toys</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-dove"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
+
+                <div class="productbuttons">
+                  <button class="btn btn-primary btn-xl" id="btn1" type="submit" onclick = "changeImgCar()">Blocks</button>
+                  <button class="btn btn-primary btn-xl" id="btn2" type="submit" onclick = "changeImgBoat()">Boat</button>
+                  <button class="btn btn-primary btn-xl" id="btn3" type="submit" onclick = "changeImgPlane()">Plane</button>
+                  <button class="btn btn-primary btn-xl" id="submitButton" type="submit" onclick = "changeImgBlocks()">Car</button>
+                </div>
+
+                  <br>
+
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/circus.png" alt="..." />
-                        </div>
-                    </div>
                     <!-- Portfolio Item 4-->
                     <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/game.png" alt="..." />
+                            <img class="img-car1" id="prodImg1" src="car1.jpg" height="100%" width="100%"/>
                         </div>
                     </div>
                     <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="..." />
+                            <img class="img-car2" id="prodImg2"src="car2.jpg" height="100%" width="100%"/>
                         </div>
                     </div>
                     <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="..." />
+                            <img class="img-car3" id="prodImg3" src="car3.jpg" height="100%" width="100%"/>
                         </div>
                     </div>
                 </div>
@@ -223,6 +209,20 @@
                             SATURDAY: 10:00 AM to 2:00 PM
                         </p>
                     </div>
+
+                    <div class="col-lg-5">
+                        <h4 class="text-uppercase mb-4">About The Owners</h4>
+                        <p class="lead mb-0">
+                          Our handcrafted classic, wooden toys  are designed to bring out that slowness in your home.
+                           From Planes, trains, automobiles and boats, playsets, all of our wooden toys are designed to
+                            spark imagination. The going may be a little slower, but oh the things you’ll see along the way!
+                            <br>
+                            Since 2018, Little Bird Toys has delighted families looking for quality children’s toys.
+                            Our collection of heirloom quality products are built to stand the test of time and to be enjoyed
+                            from sibling to sibling and generation to generation.
+
+                        </p>
+                    </div>
                 </div>
             </div>
         </footer>
@@ -241,7 +241,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Wooden Boat</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -249,7 +249,7 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
+                                    <img class="boat1.jpg">
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
@@ -337,7 +337,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Description</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -345,9 +345,10 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" id="imgPopUp" src="car4.jpg" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-4" id="imgPopUpText">Our Wooden Car is made from only the best material in New Jersey. With each purchase
+                                    we will donate a 1/3 of profits to kids toy charities. </p>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
@@ -369,7 +370,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Wooden Boat</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -377,9 +378,10 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" id="imgPopUpBoat" src="boat2.jpg" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-4" id="imgPopUpText">Our Wooden Boat is made from only the best material in New Jersey. With each purchase
+                                    we will donate a 1/3 of profits to kids toy charities. </p>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
@@ -401,7 +403,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Plane</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -409,9 +411,9 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" id="imgPopUpPlane" src="plane1.jpg" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-4" id="imgPopUpText">Plane</p>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
@@ -426,11 +428,12 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="js/scripts.js"></script>
     </body>
 </html>

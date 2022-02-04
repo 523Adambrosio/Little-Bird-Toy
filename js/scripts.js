@@ -5,7 +5,7 @@
 */
 //
 // Scripts
-// 
+//
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
     };
 
-    // Shrink the navbar 
+    // Shrink the navbar
     navbarShrink();
 
     // Shrink the navbar when page is scrolled
@@ -52,3 +52,36 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+function changeImgCar(){
+  document.getElementById('prodImg1').src = "block3.jpg";
+  document.getElementById('prodImg2').src = "block2.jpg";
+  document.getElementById('prodImg3').src = "block4.jpg";
+  document.getElementById('imgPopUp').src = "block4.jpg";
+  document.getElementById('imgPopUpText').textContent = "Our wooden block is made from the best material in New Jersey. We will be donating half of the profits to charities.  ";
+}
+
+function changeImgBoat(){
+  document.getElementById('prodImg1').src = "boat1.jpg";
+  document.getElementById('prodImg2').src = "boat2.jpg";
+  document.getElementById('prodImg3').src = "boat1.jpg";
+  document.getElementById('imgPopUp').src = "boat2.jpg";
+  document.getElementById('imgPopUpText').textContent = "Our wooden boat is made from the best material in New Jersey. We will be donating a third of our profits to charities.  ";
+}
+
+function changeImgPlane(){
+  document.getElementById('prodImg1').src = "plane1.jpg";
+  document.getElementById('prodImg2').src = "plane2.jpg";
+  document.getElementById('prodImg3').src = "plane3.jpg";
+  document.getElementById('imgPopUp').src = "plane1.jpg";
+  document.getElementById('imgPopUpText').textContent = "Our wooden plane is made from the best material in New Jersey. We will be donating a third of our profits to charities.";
+}
+
+function changeImgBlocks(){
+  document.getElementById('prodImg1').src = "car1.jpg";
+  document.getElementById('prodImg2').src = "car2.jpg";
+  document.getElementById('prodImg3').src = "car3.jpg";
+  document.getElementById('imgPopUp').src = "car4.jpg";
+  document.getElementById('imgPopUpText').textContent = "Our wooden car is made from the best material in New Jersey. We will be donating a third of our profits to charities.";
+}
